@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43E312AF-ED68-4515-ADB6-9F102C8F84F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>adapter</RootNamespace>
+    <AssemblyName>adapter</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="antlr.runtime">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\antlr.runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="CookComputing.XmlRpcV2">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\CookComputing.XmlRpcV2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v7.1">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\DevExpress.Data.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v7.1">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\DevExpress.Utils.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v7.1">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\DevExpress.XtraEditors.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v7.1">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\DevExpress.XtraTreeList.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.Annotations">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\JetBrains.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Deployment.Compression">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\Microsoft.Deployment.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Deployment.Compression.Cab">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\Microsoft.Deployment.Compression.Cab.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Deployment.WindowsInstaller">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\Microsoft.Deployment.WindowsInstaller.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.ObjectModel">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestWindow">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow\Microsoft.VisualStudio.TestWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestWindow.Core">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow\Microsoft.VisualStudio.TestWindow.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestWindow.Interfaces">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow\Microsoft.VisualStudio.TestWindow.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.XmlTransform">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\Microsoft.Web.XmlTransform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="mustache-sharp">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\mustache-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Core">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\NuGet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NVelocity">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="Sprache">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\Sprache.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Vestris.ResourceLib">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\Vestris.ResourceLib.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\WebDriver.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriverRunner">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\WebDriverRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="WpfContrib">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\WpfContrib.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\xunit.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.abstractions">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\xunit.abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.runner.utility.desktop">
+      <HintPath>..\..\..\..\..\..\..\workspace\iSIMSSeleniumTestFrameWork\WebDriverRunner\bin\Debug\xunit.runner.utility.desktop.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="E34TestDiscoverer.cs" />
+    <Compile Include="E34TestExecutor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
